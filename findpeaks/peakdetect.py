@@ -173,7 +173,7 @@ def peakdetect(y_axis, x_axis=None, lookahead=200, delta=0):
     
     # maxima and minima candidates are temporarily stored in
     # mx and mn respectively
-    mn, mx = np.Inf, -np.Inf
+    mn, mx = np.inf, -np.inf
     
     # Only detect peak if there is 'lookahead' amount of points after it
     for index, (x, y) in enumerate(zip(x_axis[:-lookahead], 
